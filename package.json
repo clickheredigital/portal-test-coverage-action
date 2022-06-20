@@ -1,0 +1,32 @@
+{
+  "name": "chd-portal-test-coverage-action",
+  "version": "1.0.0",
+  "description": "CHD Portal Test Coverage Action",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "test": "jest",
+    "all": "npm run lint && npm run prepare && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcancelik/chd-custom-test-action.git"
+  },
+  "author": "CHD IT<it@clickheredigital.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clickheredigital/portal-test-coverage-action/issues"
+  },
+  "homepage": "https://github.com/clickheredigital/portal-test-coverage-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^5.0.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "eslint": "^8.17.0",
+    "jest": "^28.1.1"
+  }
+}
