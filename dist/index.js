@@ -10169,12 +10169,6 @@ class Action {
       );
     }
 
-    if (response.data.status !== "ahead") {
-      core.setFailed(
-        `The head commit for this ${this.context.eventName} event is not ahead of the base commit.`,
-      );
-    }
-
     return response.data.files;
   }
 
