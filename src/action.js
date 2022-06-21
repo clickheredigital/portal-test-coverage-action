@@ -47,15 +47,18 @@ class Action {
         base = this.context.payload.pull_request?.base?.sha;
         head = this.context.payload.pull_request?.head?.sha;
         break;
-      case "push":
-        base = this.context.payload.before;
-        head = this.context.payload.after;
+      case "pull_request_target":
+        base = this.context.payload.pull_request?.base?.sha;
+        head = this.context.payload.pull_request?.head?.sha;
         break;
       default:
         core.setFailed(
-          `This action only supports pull requests and pushes, ${this.context.eventName} events are not supported.`,
+          `This action only supports pull request(and pull request target), ${this.context.eventName} events are not supported.`,
         );
     }
+
+    core.info(`Base commit: ${base}`);
+    core.info(`Head commit: ${head}`);
 
     return { base, head };
   }
