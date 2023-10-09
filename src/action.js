@@ -13,7 +13,6 @@ const SERVICES_WITH_TESTS = [
   "AuthenticationService",
   "CRMService",
   "ClientActivityService",
-  "ClientSalesService",
   "ClientService",
   "CommunicationService",
   "CredentialService",
