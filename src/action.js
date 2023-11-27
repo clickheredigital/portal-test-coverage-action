@@ -15,7 +15,6 @@ const SERVICES_WITH_TESTS = [
   "ClientActivityService",
   "ClientService",
   "CommunicationService",
-  "CredentialService",
   "DataMappingService",
   "GatewayService",
   "NotificationService",
