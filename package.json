@@ -1,6 +1,6 @@
 {
   "name": "chd-portal-test-coverage-action",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CHD Portal Test Coverage Action",
   "main": "index.js",
   "scripts": {
