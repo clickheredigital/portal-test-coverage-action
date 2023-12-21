@@ -7,7 +7,6 @@ const { generateTagLine, postComment } = require("./comment.helper");
 
 const SERVICES_WITH_TESTS = [
   "AccountingService",
-  "AgreementService",
   "AnalyticsService",
   "AssetService",
   "AuthenticationService",
