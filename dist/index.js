@@ -30150,7 +30150,6 @@ const { generateTagLine, postComment } = __nccwpck_require__(2973);
 
 const SERVICES_WITH_TESTS = [
   "AccountingService",
-  "AgreementService",
   "AnalyticsService",
   "AssetService",
   "AuthenticationService",
