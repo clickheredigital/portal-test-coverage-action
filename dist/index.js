@@ -30154,7 +30154,6 @@ const SERVICES_WITH_TESTS = [
   "AssetService",
   "AuthenticationService",
   "CRMService",
-  "ClientActivityService",
   "ClientService",
   "CommunicationService",
   "DataMappingService",
